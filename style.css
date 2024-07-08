@@ -1,0 +1,222 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: rgb(209, 100, 100); 
+}
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar .search {
+  float: right;
+  color: white;
+  position: relative;
+  transform: translateX(-10%) translateY(50%);
+}
+
+.navbar .search input {
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  margin-left: 5px;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+.subnav .subnavbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: rgb(201, 151, 151);
+  cursor: pointer;
+}
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(209, 155, 155);
+  width: 100%;
+  z-index: 1;
+}
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+.subnav:hover .subnav-content {
+  display: block;
+}
+.header{
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  background-color: #d6b487;
+  color: rgb(102, 63, 19);
+  font-size: 60px;
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #cecbe0;
+}
+.container .product-table {
+  width: 40%;
+  height: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-spacing: 5px;
+}
+.container .product-table .type {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: #303952;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 15px 0 15px 0;
+}
+.container .product-table .product-card {
+  width: 100%;
+  height: 100%;
+  background-color: #574b90;
+  color: #FFF;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  border-radius: 5px;
+  transition-duration: .5s;
+}
+.container .product-table .product-card:hover {
+  background-color: #6f64a7;
+}
+.container .product-table .product-card img {
+  width: 145px;
+  height: 150px;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+.container .product-table .product-card .label {
+  width: 100%;
+  padding: 5% 0 5% 0;
+}
+.container .product-table .product-card .label:hover {
+  cursor: pointer;
+}
+.container-2 {
+  width: 100%;
+  height: 72vh;
+  background-color: #cecbe0;
+}
+.container-2 .detail-table {
+  width: 75%;
+  height: 95%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border-spacing: 20px;
+}
+.container-2 .detail-table img {
+  width: 400px;
+  height: 400px;
+  border: 5px solid #574b90;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container-2 .detail-table .detail-product {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 60px;
+}
+.container-2 .detail-table .product-name {
+  font-size: 64px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Sans', sans-serif;
+}
+.container-2 .detail-table .product-detail {
+  font-family: 'Bai Jamjuree', sans-serif;
+  height: 200px;
+  font-size: 24px;
+}
+.container-2 .detail-table .product-amount {
+  width: 50%;
+}
+.container-2 .detail-table .product-amount input {
+  width: 15%;
+  height: 25px;
+  border: 2px solid #574b90;
+  border-radius: 3px;
+  background-color: transparent;
+}
+.container-2 .detail-table .product-amount button {
+  width: 72px;
+  height: 32px;
+  border: 2px solid #574b90;
+  border-radius: 3px;
+  background-color: transparent;
+  transition-duration: .5s;
+}
+.container-2 .detail-table .product-amount button:hover {
+  cursor: pointer;
+  background-color: #574b90;
+  color: white;
+}
+.footer {
+  width: 100%;
+  background-color: rgb(209, 100, 100); 
+  text-align: center;
+  padding: 15px 0 15px 0;
+  color: #FFF;
+}
+.footer-2 {
+  font-family: 'Bai Jamjuree', sans-serif;
+  width: 100%;
+  background-color: rgb(241, 215, 215); 
+  text-align: center;
+  padding: 15px 0 15px 0;
+  color: rgb(241, 87, 87);
+}
+.footer-2 img {
+  border: 8px solid #574b90;
+}
+.footer-3 {
+  font-family: 'Bai Jamjuree', sans-serif;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 252, 255);
+}
